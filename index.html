@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href="style.css">
+    
+    <title>Inter GalacliCk</title>
+    
+</head>
+
+
+<body>
+    
+    <div class="page">
+        
+        <div class= "titre"> 
+            <h1 class="aklick">Inter GalaCLICK</h1> 
+            <br>
+            <p> Montez le plus haut possible !<p>
+        </div>
+        
+        
+        <div class="bas">
+            
+            <div class= "jeu">
+                
+                
+                
+                
+                <div class="fusee">
+                    
+                    
+                    <label> <section id="gold">Vous êtes à 0 Km d'altitude.</section></label>
+                    
+                    <div class="photo">
+                        <img src="images/fusee.GIF" alt="Photo de Moi" width="80px" height="100px"/>
+                    </div>
+                    
+                    
+                    
+                    
+                    <button class="boutongaz" onclick="addGold(l)"> Mettre les Gaz ! </button>
+                    
+                    <section id="GPS">Vous volez à 0 km/s .</section>
+
+                    <div id="min">Votre fusée est soutenue par 0 Bonus au total.</div>
+
+                    <div class="save">
+                        <button class="boutonsave" onclick="save()"> Sauvegarder </button>
+                        <button class="boutonsave" onclick="load()"> Reprendre  </button>
+                        <button class="boutonsave" onclick="reset()"> Redescendre sur Terre </button>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+                
+                
+            </div>
+            
+
+            <div class="boutique">
+                
+                
+                
+                <div class="remarques">
+                    Remarques :
+                    <ul>
+                        <li>A chaque Bonus acheté, son prix augmentera de 15%.</li><br>
+                        <li>A chaque fois que vous posséderez 50 Bonus, vous monterez 2x plus haut en mettant les gaz.</li><br>
+                        <li>A chaque fois que vous posséderez 25, 50, 100, 250 et 1000 bonus d'un même type, ceux-ci vont produire 2x plus de Boost.</li><br>
+                        <li> Pas d'inquiétudes, votre partie est sauvegardée automatiquement, pour reprendre la partie sauvegardée appuyez sur le bouton "Reprendre !".</li><br>
+                    </ul>
+                    
+                </div>
+                
+                
+                
+                
+                
+                <div class="minions"> 
+                    <div class="minion">
+                        
+                        <h3>Inertie</h3>
+                        <div class="photo">
+                            <img src="images/inertie.jpeg" alt="Photo de Moi" width="80px" height="100px"/>
+                        </div>
+                        
+                        
+                        <button class="boutonachat"  onclick="buyMinion(1)"> Acheter </button>
+                        <div id="minioncout1">Sacrifice : - 10.00 Km</div>
+                        <div id="miniongps1">Boost : 1 Km/s</div>
+                        <div id="minionowned1">Possédés : 0</div>
+                    </div>
+                    
+                    <div class="minion">
+                        
+                        <h3>Propulseur</h3>
+                        <div class="photo">
+                            <img src="images/propulseur.jpg" alt="Photo de Moi" width="80px" height="100px"/>
+                        </div>
+                        <button  class="boutonachat"  onclick="buyMinion(2)"> Acheter </button>
+                        <div id="minioncout2">Sacrifice : - 100.00 Km</div>
+                        <div id="miniongps2">Boost : 5 Km/s</div>
+                        <div id="minionowned2">Possédés : 0</div>
+                    </div>
+                    
+                    <div class="minion">
+                        
+                        <h3>Copilote</h3>
+                        <div class="photo">
+                            <img src="images/astronaute.jpg" alt="Photo de Moi" width="80px" height="100px"/>
+                        </div>
+                        <button class="boutonachat" onclick="buyMinion(3)"> Acheter </button>
+                        <div id="minioncout3">Sacrifice : - 500.00 Km</div>
+                        <div id="miniongps3">Boost : 10 Km/s</div>
+                        <div id="minionowned3">Possédés : 0</div>
+                    </div>
+                    
+                </div>  
+                
+            </div>
+            
+            
+            
+        </div>
+        
+        <script src="script.js"></script>    
+        
+    </body>
+    </html>
